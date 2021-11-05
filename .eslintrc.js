@@ -3,12 +3,15 @@ module.exports = { /* eslint-env node */
   parser: '@typescript-eslint/parser',
   plugins: [
     '@typescript-eslint',
+    "react-hooks"
   ],
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
   ],
   rules: {
+    "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+    "react-hooks/exhaustive-deps": "warn", // Checks effect dependencies
     'computed-property-spacing': ['warn', 'always'],
     'keyword-spacing': ['warn', { 'before': true, 'after': true }],
     'arrow-spacing': ['warn', { 'before': true, 'after': true }],
@@ -18,6 +21,7 @@ module.exports = { /* eslint-env node */
     'indent': ['warn', 2],
     'semi': ['warn', 'always'],
     'semi-spacing': 'warn',
-    'space-before-blocks': 'warn'
+    'space-before-blocks': 'warn',
+    'no-duplicate-imports': 'warn'
   },
 };
