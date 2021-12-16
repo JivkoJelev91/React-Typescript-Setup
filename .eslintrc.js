@@ -22,6 +22,7 @@ module.exports = { /* eslint-env node */
     'semi': ['warn', 'always'],
     'semi-spacing': 'warn',
     'space-before-blocks': 'warn',
-    'no-duplicate-imports': 'warn'
+    'no-duplicate-imports': 'warn',
+    'react/self-closing-comp': 'warn',
   },
 };
