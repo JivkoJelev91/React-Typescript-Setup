@@ -3,7 +3,8 @@ module.exports = { /* eslint-env node */
   parser: '@typescript-eslint/parser',
   plugins: [
     '@typescript-eslint',
-    "react-hooks"
+    'react-hooks',
+    'react'
   ],
   extends: [
     'eslint:recommended',
